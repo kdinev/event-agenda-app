@@ -1,0 +1,26 @@
+<ion-view view-title="Lectures">
+  <ion-content class="padding">
+    <ion-list>
+		<ion-item class="override-me" ng-repeat="agendaItem in agendaItems" type="item-text-wrap" href="#/tab/lectures/{{agendaItem.id}}">
+			<ion-option-button class="ion-ios-plus" ng-click="remove(chat)">
+			  Add
+			</ion-option-button>
+			
+			<div class="agenda-item-left color-scheme orange">
+			</div>
+			
+			<div class="agenda-item-left">
+				<div class="vertical-mid">
+					{{agendaItem.time}}
+				</div>
+			</div>
+
+			<div class="agenda-item-left">
+				<div class="item-detail">{{agendaItem.category}}</div>
+				<div class="item-detail">{{agendaItem.title}}</div>
+				<div class="item-detail">{{agendaItem.speaker.name}}</div>
+			</div>
+		</ion-item>
+	</ion-list>
+  </ion-content>
+</ion-view>

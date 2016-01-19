@@ -1,0 +1,74 @@
+/* Empty. Add your own CSS if you like */
+.center {
+	text-align: center;
+}
+
+.padding-avg {
+	padding: 35px;
+}
+
+.override-me {
+	margin-bottom: 10px
+}
+
+.agenda-item-left {
+	line-height: 75px;
+	float: left;
+	padding-left: 10px;
+}
+
+	.agenda-item-left .item-detail {
+		line-height: 25px;
+		font-size: 8pt;
+		overflow: hidden;
+	}
+
+.vertical-mid {
+	line-height: 75px;
+	min-width: 47px;
+}
+
+.agenda-item-left.color-scheme {
+	width: 10px;
+	height: 100%;
+	min-height: 75px;
+	margin: 0;
+}
+
+.color-scheme.orange {
+	background-color: #ffe5b4;
+}
+
+.item-complex .item-content, 
+.item-radio .item-content {
+	padding: 0;
+}
+
+.bar-custom {
+	height: auto;
+	padding: 10px 50px 10px 50px;
+}
+
+.bar-custom .title {
+	position: static;
+}
+
+.bar-custom .title.main-title {
+	font-size: 18pt;
+	height: auto;
+	white-space: normal;
+}
+
+.bar-custom .title.subtitle {
+	font-size: 9pt;
+	height: auto;
+	white-space: normal;
+}
+
+.has-margin .margin-top {
+	margin-top: 175px;
+}
+
+.padding-avg a {
+	text-decoration: none;
+}

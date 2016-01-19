@@ -1,0 +1,10 @@
+<ion-view view-title="Speakers">
+  <ion-content class="">
+	<a ng-repeat="speaker in speakers" class="item item-avatar item-icon-right" href="#/tab/speakers/{{speaker.id}}">
+		<img src="{{speaker.img}}" alt="profile image" />
+		<h2>{{speaker.name}}</h2>
+		<p>{{speaker.position}} at {{speaker.company}}</p>
+		<i class="icon ion-chevron-right"></i>
+	</a>
+  </ion-content>
+</ion-view>
