@@ -13,6 +13,7 @@
 		<div class="margin-top">
 			<a href="#/tab/speakers/{{agendaItem.speaker.id}}"><h4 class="center">{{agendaItem.speaker.name}}</h4></a>
 			<h5 class="center">{{agendaItem.time}}</h5>
+			<div class="center"><button class="button icon-left {{contains(agendaItem) ? 'ion-ios-close-outline' : 'ion-ios-plus-outline'}}" ng-click="contains(agendaItem) ? remove(agendaItem) : add(agendaItem); $event.stopPropagation();">{{contains(agendaItem) ? 'Remove from schedule' : 'Add to schedule'}}</button></div>
 			<p>
 			  {{agendaItem.description}}
 			</p>

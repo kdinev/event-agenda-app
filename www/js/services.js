@@ -74,6 +74,15 @@ angular.module('starter.services', [])
 			personal = agenda.slice(0, 2);
 		}
 		return personal;
+	},
+	contains: function (item) {
+		var i;
+		for (i = 0; i < personal.length; i++) {
+			if (item.id === personal[i].id) {
+				return true;
+			}
+		}
+		return false;
 	}
   };
 })

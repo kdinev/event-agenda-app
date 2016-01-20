@@ -8,9 +8,11 @@
 	<ion-content class="padding-avg center">
 		<h1 class="title main-title">{{speaker.name}}</h1>
 		<h5 class="title subtitle">{{speaker.position}} at {{speaker.company}}</h5>
-		<div ng-repeat="session in speaker.sessions">
-			{{session.title}}
-		</div>
+		<ul>
+			<li ng-repeat="session in speaker.sessions">
+				<a href="#/tab/lectures/{{session.id}}">{{session.title}}</a>
+			</li>
+		</ul>
 		<p>
 		  {{speaker.description}}
 		</p>

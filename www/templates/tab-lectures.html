@@ -1,7 +1,7 @@
 <ion-view view-title="Lectures">
   <ion-content class="padding">
     <ion-list>
-		<ion-item class="override-me" ng-repeat="agendaItem in agendaItems" type="item-text-wrap" href="#/tab/lectures/{{agendaItem.id}}">
+		<ion-item class="override-me" ng-repeat="agendaItem in agendaItems" type="item-text-wrap" ui-sref="tab.lecture-detail({ itemId: agendaItem.id })">
 			<ion-option-button class="ion-ios-plus" ng-click="remove(chat)">
 			  Add
 			</ion-option-button>
@@ -18,7 +18,7 @@
 				<div class="item-detail">{{agendaItem.category}}</div>
 				<div class="item-detail">{{agendaItem.title}}</div>
 				<div class="item-detail">{{agendaItem.speaker.name}}</div>
-				
+				<div class="item-detail item-button"><button class="button icon-left {{contains(agendaItem) ? 'ion-ios-close-outline' : 'ion-ios-plus-outline'}}" ng-click="contains(agendaItem) ? remove(agendaItem) : add(agendaItem); $event.stopPropagation();">{{contains(agendaItem) ? 'Remove from schedule' : 'Add to schedule'}}</button></div>
 			</div>
 		</ion-item>
 	</ion-list>

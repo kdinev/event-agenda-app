@@ -24,6 +24,9 @@ angular.module('starter.controllers', [])
 	$scope.add = function (item) {
 		AgendaItems.add(item);
 	};
+	$scope.contains = function (item) {
+		return AgendaItems.contains(item);
+	}	
 	var params = $state.params;
 	if (params && params.itemId !== "-1") {
 		$state.transitionTo("tab.lecture-detail", params);
@@ -31,7 +34,16 @@ angular.module('starter.controllers', [])
 })
 
 .controller('LectureDetailCtrl', function($scope, $stateParams, AgendaItems) {
-  $scope.agendaItem = AgendaItems.get($stateParams.itemId);
+	$scope.agendaItem = AgendaItems.get($stateParams.itemId);
+	$scope.remove = function(item) {
+		AgendaItems.remove(item);
+	};
+	$scope.add = function (item) {
+		AgendaItems.add(item);
+	};
+	$scope.contains = function (item) {
+		return AgendaItems.contains(item);
+	}	
 })
 
 .controller('SpeakersCtrl', function($scope, $state, $ionicHistory, Speakers) {
