@@ -14,7 +14,7 @@
 .agenda-item-left {
 	line-height: 75px;
 	float: left;
-	padding-left: 10px;
+	padding-right: 10px;
 }
 
 	.agenda-item-left .item-detail {
@@ -25,7 +25,7 @@
 
 .vertical-mid {
 	line-height: 75px;
-	min-width: 47px;
+	min-width: 50px;
 }
 
 .agenda-item-left.color-scheme {

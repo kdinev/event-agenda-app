@@ -17,6 +17,7 @@ angular.module('starter.controllers', [])
 	$ionicHistory.clearHistory();
 	$ionicHistory.clearCache();
 	$scope.agendaItems = AgendaItems.all();
+	$scope.personalAgenda = AgendaItems.getUserSpecific();
 	$scope.remove = function(item) {
 		AgendaItems.remove(item);
 	};
